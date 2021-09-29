@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@700&display=swap');
+
+
+
 body{
     box-sizing: border-box;
 }
@@ -35,6 +39,11 @@ font-size: 1rem;
     gap:2rem;
 }
 
+#goal{
+    border:none;
+    border-bottom:1px black solid;
+}
+
 .circle{
     border-radius: 50%;
     border:1px solid black;
@@ -49,13 +58,16 @@ font-size: 1rem;
 }
 
 .cross{
+    font-family: 'Gluten', cursive;
     color:red;
     position: absolute;
-    top:0;
+    top:0.3rem;
     left:0;
     text-align: center;
     font-size:1.5rem;
     width:1.8rem;
     height:1.8rem;
+
+   
  
 }
