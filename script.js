@@ -34,8 +34,9 @@ if (+localStorage.getItem("notBreakChain")>0){
 function maxRow() {
     let row = document.querySelectorAll(".cross")
     if(row.length==0){
+                  localStorage.setItem("notBreakChain",y+1)
         return 0
-          localStorage.setItem("notBreakChain",y+1)
+
     }else{
     row.forEach(x => {
         y < +x.closest(".circle").innerText.replace("X", "") ? y = +x.closest(".circle").innerText.replace("X", "") : ""
