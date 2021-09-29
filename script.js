@@ -34,7 +34,7 @@ if (+localStorage.getItem("notBreakChain")>0){
 function maxRow() {
     let row = document.querySelectorAll(".cross")
     if(row.length==0){
-                  localStorage.setItem("notBreakChain",y+1)
+                  localStorage.setItem("notBreakChain",1)
         return 0
 
     }else{
