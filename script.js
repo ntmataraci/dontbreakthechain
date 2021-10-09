@@ -12,6 +12,7 @@ e.target.closest(".circle").innerHTML+=`<div class="cross">X</div>`
 if(e.target.closest(".circle").innerText=="X"){
 e.target.closest(".circle").classList.remove("cross")
 e.target.closest(".circle").innerText=""
+localStorage.setItem("notBreakChain",y-1)
 }
 })
 
