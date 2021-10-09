@@ -9,6 +9,10 @@ main_number.addEventListener("click",(e)=>{
     if (+e.target.closest(".circle").innerText.replace("X","")==(maxRow()+1)){
 e.target.closest(".circle").innerHTML+=`<div class="cross">X</div>`
     }
+if(e.target.closest(".circle").innerText=="X"){
+e.target.closest(".circle").classList.remove("cross")
+e.target.closest(".circle").innerText=""
+}
 })
 
 
